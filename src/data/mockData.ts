@@ -1,6 +1,7 @@
 // Mock data for the MVP - will be replaced with database later
 
 export type AppRole = 'admin' | 'professor' | 'student';
+export type UserStatus = 'active' | 'inactive';
 
 export interface MockUser {
   id: string;
@@ -15,6 +16,7 @@ export interface MockUser {
   date_of_birth: string;
   profession?: string;
   date_inscription: string;
+  status: UserStatus;
 }
 
 export interface Pack {
@@ -69,6 +71,7 @@ export const mockUsers: MockUser[] = [
     city: 'Casablanca',
     date_of_birth: '1985-01-15',
     date_inscription: '2024-01-01',
+    status: 'active',
   },
   {
     id: 'prof-1',
@@ -82,6 +85,7 @@ export const mockUsers: MockUser[] = [
     city: 'Rabat',
     date_of_birth: '1990-05-20',
     date_inscription: '2024-01-15',
+    status: 'active',
   },
   {
     id: 'prof-2',
@@ -95,6 +99,7 @@ export const mockUsers: MockUser[] = [
     city: 'Tanger',
     date_of_birth: '1988-08-10',
     date_inscription: '2024-02-01',
+    status: 'active',
   },
   {
     id: 'student-1',
@@ -109,6 +114,7 @@ export const mockUsers: MockUser[] = [
     date_of_birth: '1995-03-25',
     profession: 'Ingénieur',
     date_inscription: '2024-03-01',
+    status: 'active',
   },
   {
     id: 'student-2',
@@ -123,6 +129,7 @@ export const mockUsers: MockUser[] = [
     date_of_birth: '1998-07-12',
     profession: 'Étudiante',
     date_inscription: '2024-03-05',
+    status: 'active',
   },
   {
     id: 'student-3',
@@ -137,6 +144,7 @@ export const mockUsers: MockUser[] = [
     date_of_birth: '1992-11-30',
     profession: 'Commercial',
     date_inscription: '2024-03-10',
+    status: 'inactive',
   },
 ];
 
