@@ -93,6 +93,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         date_of_birth: metadata.date_of_birth,
         profession: metadata.profession,
         date_inscription: new Date().toISOString().split('T')[0],
+        status: 'active',
       };
       
       // Add to mock users (won't persist after refresh in MVP)
